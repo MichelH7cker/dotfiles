@@ -43,7 +43,7 @@ exec --no-startup-id picom &
 
 # scrot to print screen
 exec --no-startup-id mkdir -p /tmp/screenshots
-bindsym Print exec scrot -e 'mv $f ~/tmp/screenshots/%Y-%m-%d_%H-%M-%S.png'
+bindsym Print exec scrot -e 'mv $f /tmp/screenshots/%Y-%m-%d_%H-%M-%S.png'
 bindsym $mod+Print --release exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
 
 # Use pactl to adjust volume in PulseAudio.
