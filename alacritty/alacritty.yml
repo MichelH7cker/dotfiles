@@ -104,4 +104,42 @@ scrolling:
 # change the `it` value in terminfo when altering this setting.
 #tabspaces: 8
 
+# Font configuration
+font:
+  # normal font -> whithou style
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: Source Code Pro
+    stye: Regular
+    
+  # bold font
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Source Code Pro
+    style: Bold
 
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Source Code Pro
+    style: Italic
+
+  # Bold italic font face
+  bold_italic:
+    # Font family
+    #
+    # If the bold italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Source Code Pro
+    style: Bold Italic
