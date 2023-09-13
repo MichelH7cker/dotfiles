@@ -37,9 +37,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# executes picom automatic
+# picom is used to transparency in alacritty terminal
+exec --no-startup-id picom &
+
 # scrot to print screen
 exec --no-startup-id mkdir -p /tmp/screenshots
-bindsym Print exec scrot -e 'mv $f ~/tmp/screenshots/%Y-%m-%d_%H-%M-%S.png'
+bindsym Print exec scrot -e 'mv $f /tmp/screenshots/%Y-%m-%d_%H-%M-%S.png'
 bindsym $mod+Print --release exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f'
 
 # Use pactl to adjust volume in PulseAudio.
