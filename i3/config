@@ -41,6 +41,11 @@ exec --no-startup-id nm-applet
 # picom is used to transparency in alacritty terminal
 exec --no-startup-id picom &
 
+# 
+# put background image
+#
+exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/lofi-coffee-shop.jpeg
+
 # scrot to print screen
 exec --no-startup-id mkdir -p /tmp/screenshots
 bindsym Print exec scrot -e 'mv $f /tmp/screenshots/%Y-%m-%d_%H-%M-%S.png'
