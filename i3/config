@@ -218,3 +218,11 @@ client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
 client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 client.background       #FFFFFF
+
+# Use tabbed mode (no window decorations)
+default_border none
+hide_edge_borders both
+smart_borders on
+#new_window 1pixel
+for_window [class=".*"] border pixel 1
+
