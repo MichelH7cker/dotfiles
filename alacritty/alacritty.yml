@@ -1,6 +1,6 @@
 # this change the color scheme of alacritty
 import: 
-  - ~/.config/alacritty/themes/tokyo-night.yaml
+  - ~/.config/alacritty/themes/catppuccin-mocha.yml
 
 env:
   # TERM variable
