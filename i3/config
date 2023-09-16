@@ -31,7 +31,9 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock mantablockscreen
+exec --no-startup-id xautolock -time 10 -nowlocker mantablockscreen
+bindsym $mod+Control+l exec --no-startup-id mantablockscreen
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -39,12 +41,12 @@ exec --no-startup-id nm-applet
 
 # executes picom automatic
 # picom is used to transparency in alacritty terminal
-exec --no-startup-id picom &
+exec --no-startup-id picom --dbus &
 
 # 
 # put background image
 #
-exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/lofi-coffee-shop.jpeg
+exec --no-startup-id nitrogen --set-auto ~/Pictures/Wallpapers/confy-city.png
 
 #
 # start polybar
@@ -211,7 +213,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # class                 border  bground text    indicator child_border
-client.focused          #83CAFA #51A2DA #FFFFFF #83CAFA   #51A2DA
+client.focused          #FC8EAC #FC8EAC #FFFFFF #83CAFA   #FC8EAC
 client.focused_inactive #8C8C8C #4C4C4C #FFFFFF #4C4C4C   #8C8C8C
 client.unfocused        #4C4C4C #222222 #888888 #292D2E   #222222
 client.urgent           #EC69A0 #DB3279 #FFFFFF #DB3279   #DB3279
@@ -219,10 +221,19 @@ client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
 
 client.background       #FFFFFF
 
+# gaps
+gaps outer 0
+gaps inner 10
+gaps top 12
+gaps bottom 12
+default_border none
+default_floating_border none
+hide_edge_borders vertical
+
 # Use tabbed mode (no window decorations)
 default_border none
 hide_edge_borders both
 smart_borders on
 #new_window 1pixel
-for_window [class=".*"] border pixel 1
+for_window [class=".*"] border pixel 2
 
