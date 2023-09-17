@@ -1,8 +1,0 @@
-[00:15:19 2023-09-15] FETCHING Version 2.23.2
-[00:15:19 2023-09-15] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.23.2/spicetify-2.23.2-linux-amd64.tar.gz
-[00:15:21 2023-09-15] EXTRACTING /home/h7cker/.spicetify/spicetify.tar.gz
-[00:15:21 2023-09-15] SETTING EXECUTABLE PERMISSIONS TO /home/h7cker/.spicetify/spicetify
-[00:15:21 2023-09-15] REMOVING /home/h7cker/.spicetify/spicetify.tar.gz
-[00:15:21 2023-09-15] spicetify path already set in /home/h7cker/.zshrc, continuing...
-[00:15:21 2023-09-15] spicetify v2.23.2 was installed successfully to /home/h7cker/.spicetify
-[00:15:21 2023-09-15] Run 'spicetify --help' to get started
