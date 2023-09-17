@@ -113,4 +113,3 @@ export PATH=$PATH:/home/h7cker/.spicetify
 
 # improve the spotify command
 alias spotify='flatpak run com.spotify.Client'
-
