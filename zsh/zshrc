@@ -113,3 +113,8 @@ export PATH=$PATH:/home/h7cker/.spicetify
 
 # improve the spotify command
 alias spotify='flatpak run com.spotify.Client'
+
+# netkit configuration
+export NETKIT_HOME=/home/h7cker/netkit
+export MANPATH=:$NETKIT_HOME/man
+export PATH=$NETKIT_HOME/bin:$PATH
