@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git web-search)
+plugins=(git web-search zsh-autosuggestions )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -109,12 +109,12 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 export PATH=$PATH:/home/h7cker/.spicetify
 
 # improve the spotify command
 alias spotify='flatpak run com.spotify.Client'
 
-# netkit configuration
-export NETKIT_HOME=/home/h7cker/netkit
-export MANPATH=:$NETKIT_HOME/man
-export PATH=$NETKIT_HOME/bin:$PATH
+
+# Instl.sh installer binary location
+export PATH=/home/h7cker/.local/bin:$PATH
