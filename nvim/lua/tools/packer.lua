@@ -10,6 +10,9 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
+    -- packer.nvim
+    use 'lervag/vimtex'
+
     use { "catppuccin/nvim", as = "catppuccin" }
 
     use {
