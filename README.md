@@ -13,5 +13,5 @@ stow <program-dir>
 ## Demonstration
 ![small-monitor](images/small-monitor.png)
 ![big-monitor](images/big-monitor.png)
-![dual-monitor](images/dual-monitor)
+![dual-monitor](images/dual-monitor.png)
 ![latex](images/latex.png)
