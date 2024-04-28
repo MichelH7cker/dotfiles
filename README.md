@@ -11,4 +11,4 @@ stow <program-dir>
 ```
 
 ## Demonstration
-![small-monitor][images/small-monitor.png]
+![small-monitor](images/small-monitor.png)
