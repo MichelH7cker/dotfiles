@@ -10,3 +10,5 @@ To use a dotfile from an specific program just run on the root dir:
 stow <program-dir>
 ```
 
+## Demonstration
+![small-monitor][images/small-monitor.png]
