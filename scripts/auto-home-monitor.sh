@@ -1,1 +1,0 @@
-/home/h7cker/.scripts/auto-home-monitor.sh
