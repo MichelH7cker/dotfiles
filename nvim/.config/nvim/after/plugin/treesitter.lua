@@ -1,7 +1,8 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "bash", "c", "cpp", "csv", "json", "latex", "lua",
-  "make", "markdown", "markdown_inline", "python", "vim", "vimdoc", "latex"},
+  "make", "markdown", "markdown_inline", "python", "vim", "vimdoc", "latex",
+  "vim"},
 
   sync_install = false,
   auto_install = true,

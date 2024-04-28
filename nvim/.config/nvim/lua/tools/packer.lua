@@ -22,7 +22,10 @@ return require('packer').startup(function(use)
             ts_update()
         end,
     }
-    
+
+    use { 'kyazdani42/nvim-web-devicons' }
+    use { 'nvim-lualine/lualine.nvim' }
+
     use {
         'VonHeikemen/lsp-zero.nvim',
         branch = 'v1.x',
