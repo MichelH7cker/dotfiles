@@ -228,9 +228,9 @@ client.background       #FFFFFF
 
 # gaps
 gaps outer 0
-gaps inner 12
-gaps top 12
-gaps bottom 12
+gaps inner 2 
+gaps top 2 
+gaps bottom 2 
 default_border none
 default_floating_border none
 hide_edge_borders vertical

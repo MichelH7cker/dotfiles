@@ -4,7 +4,7 @@ require('catppuccin').setup({
 
 function ColorMyPencils(color) 
 
-    vim.cmd.colorscheme "catppuccin-frappe"
+    vim.cmd.colorscheme "catppuccin-mocha"
 
     --color = color or "catppuccin"
     --vim.cmd.colorscheme(color)
