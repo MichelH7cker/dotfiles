@@ -44,11 +44,7 @@ exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/lofi-computer.png --bg-
 exec --no-startup-id polybar main -r
 
 # scrot to print screen
-exec --no-startup-id mkdir -p /tmp/screenshots
-# printscreen of whole screen -> storage in a file && save in clipboard
-bindsym Print exec scrot -e 'mv $f /tmp/screenshots/%Y-%m-%d_%H-%M-%S.png && xclip -selection clipboard -t image/png -i /tmp/screenshots/%Y-%m-%d_%H-%M-%S.png'
-# printscreen of selected area -> dont't storage in file && save in clibboard
-bindsym $mod+Print --release exec scrot -s -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
+bindsym Print exec flameshot gui 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
