@@ -115,4 +115,3 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias openeem-server='cd /home/h7cker/projects/openeem/openeem-agrotis/ && python -m venv venv && source venv/bin/activate && cd app && uvicorn main:app --reload --host 0.0.0.0 --port 8001'
-
