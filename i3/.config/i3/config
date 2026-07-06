@@ -34,10 +34,13 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# do not lock when watching youtube
+exec --no-startup-id ~/dotfiles/scripts/caffeine.sh
+
 #
 # put background image
 #
-exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/lofi-computer.png --bg-fill ~/Pictures/wallpapers/lofi-computer.png
+exec --no-startup-id feh --bg-fill ~/Pictures/wallpapers/wave.png --bg-fill ~/Pictures/wallpapers/wave.png
 #
 # start polybar
 #
@@ -125,6 +128,10 @@ bindsym $mod+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent
+
+# Toggle screen locking on/off (Presentation Mode)
+set $toggle_lock sh -c 'if pgrep xss-lock > /dev/null; then killall xss-lock && notify-send "Screen Lock" "DISABLED ☕"; else xss-lock --transfer-sleep-lock -- i3lock --nofork & notify-send "Screen Lock" "ENABLED 🔒"; fi'
+bindsym $mod+Shift+x exec --no-startup-id $toggle_lock
 
 # focus the child container
 #bindsym $mod+d focus child

@@ -1,7 +1,3 @@
--- ~/.config/nvim/after/plugin/lsp.lua (VERSÃO SEGURA E FINAL)
-
--- Adicionamos esta verificação de segurança.
--- Tenta carregar os plugins necessários de forma segura. Se falhar, o arquivo para de ser executado.
 local status_ok, cmp = pcall(require, "cmp")
 if not status_ok then
   return

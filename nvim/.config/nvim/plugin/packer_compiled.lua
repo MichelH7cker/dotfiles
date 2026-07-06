@@ -135,7 +135,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["neo-tree.nvim"] = {
-    config = { "\27LJ\2\n§\2\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\15filesystem\19filtered_items\1\0\2\20hide_gitignored\2\18hide_dotfiles\1\24follow_current_file\1\0\2\24follow_current_file\0\19filtered_items\0\1\0\2\20leave_dirs_open\1\fenabled\2\vwindow\1\0\2\15filesystem\0\vwindow\0\1\0\2\nwidth\3\30\rposition\tleft\nsetup\rneo-tree\frequire\0" },
+    config = { "\27LJ\2\n§\2\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\15filesystem\19filtered_items\1\0\2\18hide_dotfiles\1\20hide_gitignored\2\24follow_current_file\1\0\2\19filtered_items\0\24follow_current_file\0\1\0\2\20leave_dirs_open\1\fenabled\2\vwindow\1\0\2\vwindow\0\15filesystem\0\1\0\2\rposition\tleft\nwidth\3\30\nsetup\rneo-tree\frequire\0" },
     loaded = true,
     path = "/home/h7cker/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
@@ -190,7 +190,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: neo-tree.nvim
 time([[Config for neo-tree.nvim]], true)
-try_loadstring("\27LJ\2\n§\2\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\15filesystem\19filtered_items\1\0\2\20hide_gitignored\2\18hide_dotfiles\1\24follow_current_file\1\0\2\24follow_current_file\0\19filtered_items\0\1\0\2\20leave_dirs_open\1\fenabled\2\vwindow\1\0\2\15filesystem\0\vwindow\0\1\0\2\nwidth\3\30\rposition\tleft\nsetup\rneo-tree\frequire\0", "config", "neo-tree.nvim")
+try_loadstring("\27LJ\2\n§\2\0\0\5\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\2B\0\2\1K\0\1\0\15filesystem\19filtered_items\1\0\2\18hide_dotfiles\1\20hide_gitignored\2\24follow_current_file\1\0\2\19filtered_items\0\24follow_current_file\0\1\0\2\20leave_dirs_open\1\fenabled\2\vwindow\1\0\2\vwindow\0\15filesystem\0\1\0\2\rposition\tleft\nwidth\3\30\nsetup\rneo-tree\frequire\0", "config", "neo-tree.nvim")
 time([[Config for neo-tree.nvim]], false)
 
 _G._packer.inside_compile = false
